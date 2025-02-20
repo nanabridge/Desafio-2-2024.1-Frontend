@@ -1,0 +1,82 @@
+
+.container {
+  display: grid;
+  grid-template-columns: 30% auto; /* Coluna esquerda menor, direita flexível */
+  grid-template-rows: 20% auto; /* Primeira linha ocupa 20% da tela */
+  width: 100vw; /* Largura total */
+  height: 100vh; /* Altura total */
+}
+
+.superior {
+  border: 3px solid #FF731A; /* Apenas bordas laranjas */
+  display: flex;
+  align-items: center; /* Alinha verticalmente */
+  justify-content: center; /* Alinha horizontalmente */
+  font-size: 2rem;
+  font-weight: bold;
+  color: #FF731A; /* Cor do texto igual à borda */
+  grid-column: 1 / 3; 
+  margin: 15px;/* Ocupa toda a largura do topo */
+}
+
+.lateral {
+  border: 3px solid #FF731A;
+  width: 15%;
+  height: 100vh; /* Ocupa 100% da altura da tela */
+  position: absolute; /* Fixa a posição na tela */
+  top: 15px; 
+  left: 15px; /* Mantém o espaçamento da esquerda */
+}
+
+.logo {
+  display: flex;
+  justify-content: first baseline; /* Alinha a imagem horizontalmente * /* Alinha a imagem verticalmente */
+  width: 100%; /* Para garantir que a logo ocupe toda a largura disponível */
+}
+
+.logo img {
+  width: 45px; /* Definindo a largura da imagem */
+  height: auto; /* Mantém a proporção da imagem */
+  margin-left: 25px; /* Margem para a esquerda da imagem */
+}
+
+/* Resetando margens e paddings para evitar problemas de layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Importação da fonte "Inter" do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap');
+
+.item {
+  display: flex; /* Usando flexbox para controlar o layout */
+  flex-direction: column; /* Coloca os itens na vertical (número em cima e texto embaixo) */
+  align-items: center; /* Alinha os itens no centro */
+  margin-bottom: 20px; /* Espaço entre os itens */
+}
+
+.item h2 {
+  font-family: 'Inter', sans-serif; /* Garantindo que a fonte esteja carregada */
+  font-weight: 300; /* Peso mais leve para o número */
+  font-size: 30px; /* Definindo um tamanho adequado para o número */
+  margin-bottom: 10px; 
+  text-align: left;/* Espaço entre o número e o texto */
+}
+
+.item p {
+  font-family: 'Inter', sans-serif; /* Garantindo que a fonte esteja carregada */
+  font-weight: 600; /* Peso mais forte para o texto */
+  font-size: 16px; /* Definindo um tamanho adequado para o texto */
+  text-align: end; /* Centraliza o texto */
+}
+
+a {
+  display: block;
+  text-align: center;
+  margin-top: 20px; /* Espaço entre o último item e o link */
+  text-decoration: none; /* Removendo sublinhado */
+  font-size: 16px; /* Tamanho de fonte do link */
+  color: orange; /* Cor do link */
+}
