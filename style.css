@@ -44,22 +44,22 @@
   flex-direction: column;
   align-items: center;
   width: 8%;
-  height: 90vh;
+  height: 95vh;
   margin-top: -134px;
   margin-left: 25px;
 }
 
 /*Posicionamento dos ícones*/
-.icon{
+.social{
   display: flex;
   flex-direction: column; /* Mantém os ícones empilhados */
   align-items: center;
   position: absolute;
-  bottom: 45px; /* Fixa no rodapé da lateral */
+  bottom: 25px; /* Fixa no rodapé da lateral */
   left: 65px; 
 }
 
-.icon img {
+.social img {
   width: 35px;
   height: auto;
   margin: 5px 0;
@@ -146,19 +146,227 @@
 /*Texto superior*/
 .indice {
   display: flex;
-  flex-direction: row; /* Alinha os itens em linha */
+  flex-direction: row; 
   position: relative; 
   left: -308px;
-  gap: 75px; /* Adiciona espaçamento entre os itens */
-
+  gap: 85px; /*Espaçamento entre os itens */
 }
 
 .indice a {
-  text-decoration: none; /* Remove o sublinhado dos links */
-  color:#FF731A;
+  text-decoration: none; 
+  color:  #FF731A;
   font-family: 'Inter', sans-serif;
   font-size: 11px;
   display: flex;
   flex-direction: column;
-  gap: 5px; /* Adiciona espaço entre o número e o texto */
+  gap: 5px; /*Espaço entre o número e o texto */
 }
+
+/*Muda a cor do primeiro link*/
+.indice a:first-child {
+  color: black; 
+  font-weight: bold; 
+}
+
+/*ABA SECUNDÁRIA*/
+/*Corpo com os quadrados*/
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/*CARDS HORIZONTAIS 1*/
+/*Aplicativo*/
+.card1 {
+  position: absolute;
+  width: 223px;
+  height: 224px;
+  left: 216px;
+  top: 153px;
+  background: #080808;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  text-align: center;
+}
+
+.card1 h2 {
+  font-weight: 700;
+  font-size: 15px;
+  color: #FF731A;
+  margin-top: 95px;
+  margin-bottom: 5px;
+}
+
+.card1 p {
+  font-weight: 200;
+  font-size: 8px;
+  line-height: 16px;
+  color: #FFFFFF;
+  max-width: 304px;
+}
+
+/*Icone do Card (igual para todos exceto o último)*/
+.icon {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  left: 94px;
+  top: 43px;
+  background: url('https://s3-alpha-sig.figma.com/img/6c0b/7320/8d5ca496222331220efc1dc65a405b5d?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=nCC-irdx7RhCeXB61ccaiVENWvLc1UkX4onNgPP-00U6kMqnQZ39oajIg3WlY9~utIc5~fZSrGoQnX3D1EfgN89OEnqa2BD99Cl67wYu2y1gSkW-IjBvdkBs1LefJspvTE3SC5sKYVBmyfs0g8zXewMhKjcBSakr-R5s9G32tA2MWYQnEZKxCWoUm6KELVw-KNK5azyg6eDwWpeeYppqpL1P6J9mNNzOL2hJole7CtCKDGPZ7zO~qsaasVjfbV6UF54TFjGwLcPHcL-k75-VFNBoBPrLmfwvmwtpy6k9DQLqQP2TNHJRxME63Qxsayae~ee~BDBqKo1uNqw1PmjL7w__') no-repeat center/cover;
+  z-index: 10;
+}
+
+/*Sistema web*/
+.card2 {
+  position: absolute;
+  width: 223px;
+  height: 224px;
+  left: 566px;
+  top: 153px;
+  background: #080808;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  text-align: center;
+}
+
+.card2 h2 {
+  font-weight: 700;
+  font-size: 15px;
+  color: #FF731A;
+  margin-top: 95px;
+  margin-bottom: 5px;
+}
+
+.card2 p {
+  font-weight: 200;
+  font-size: 8px;
+  line-height: 16px;
+  color: #FFFFFF;
+  max-width: 304px;
+}
+
+/*Site*/
+.card3 {
+  position: absolute;
+  width: 223px;
+  height: 224px;
+  left: 966px;
+  top: 153px;
+  background: #080808;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  text-align: center;
+}
+
+.card3 h2 {
+  font-weight: 700;
+  font-size: 15px;
+  color: #FF731A;
+  margin-top: 95px;
+  margin-bottom: 5px;
+}
+
+.card3 p {
+  font-weight: 200;
+  font-size: 8px;
+  line-height: 16px;
+  color: #FFFFFF;
+  max-width: 304px;
+}
+
+/*CARDS HORIZONTAIS 2*/
+/*Consultoria*/
+.card4 {
+  position: absolute;
+  width: 223px;
+  height: 224px;
+  left: 216px;
+  top: 403px;
+  background: #080808;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  text-align: center;
+}
+
+.card4 h2 {
+  font-weight: 700;
+  font-size: 15px;
+  color: #FF731A;
+  margin-top: 95px;
+  margin-bottom: 5px;
+}
+
+.card4 p {
+  font-weight: 200;
+  font-size: 8px;
+  line-height: 16px;
+  color: #FFFFFF;
+  max-width: 304px;
+}
+
+/*Soluções personalizadas*/
+.card5 {
+  position: absolute;
+  width: 623px;
+  height: 224px;
+  left: 563px;
+  top: 403px;
+  background: #080808;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.card5 h2 {
+  font-weight: 700;
+  font-size: 15px;
+  color: #FF731A;
+  margin-top: 95px;
+  margin-bottom: 5px;
+}
+
+.card5 p {
+  font-weight: 200;
+  font-size: 10px;
+  line-height: 16px;
+  color: #FFFFFF;
+  max-width: 304px;
+}
+
+/*Icone do Card*/
+.icone {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  left: 286px;
+  top: 43px;
+  background: url('https://s3-alpha-sig.figma.com/img/6c0b/7320/8d5ca496222331220efc1dc65a405b5d?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=nCC-irdx7RhCeXB61ccaiVENWvLc1UkX4onNgPP-00U6kMqnQZ39oajIg3WlY9~utIc5~fZSrGoQnX3D1EfgN89OEnqa2BD99Cl67wYu2y1gSkW-IjBvdkBs1LefJspvTE3SC5sKYVBmyfs0g8zXewMhKjcBSakr-R5s9G32tA2MWYQnEZKxCWoUm6KELVw-KNK5azyg6eDwWpeeYppqpL1P6J9mNNzOL2hJole7CtCKDGPZ7zO~qsaasVjfbV6UF54TFjGwLcPHcL-k75-VFNBoBPrLmfwvmwtpy6k9DQLqQP2TNHJRxME63Qxsayae~ee~BDBqKo1uNqw1PmjL7w__') no-repeat center/cover;
+  z-index: 10;
+}
+
+
