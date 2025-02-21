@@ -142,3 +142,23 @@
   top: 52px;
   left: 102px;
 }
+
+/*Texto superior*/
+.indice {
+  display: flex;
+  flex-direction: row; /* Alinha os itens em linha */
+  position: relative; 
+  left: -308px;
+  gap: 75px; /* Adiciona espaçamento entre os itens */
+
+}
+
+.indice a {
+  text-decoration: none; /* Remove o sublinhado dos links */
+  color:#FF731A;
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* Adiciona espaço entre o número e o texto */
+}
