@@ -13,7 +13,7 @@ O Figma apresenta três versões do layout; escolha uma para implementar.
   O código deve ser organizado, indentado e legível.
   As telas devem manter a organização em diferentes resoluções (use Flexbox, Grid e Media Queries).
 
--Desafios Extras:
+- Desafios Extras:
 
 Explore animações simples em CSS para transições de hover.
 Adicione comentários explicativos no código.
